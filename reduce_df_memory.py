@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 def reduce_mem_usage(df):
     """ iterate through all the columns of a dataframe and modify the data type
         to reduce memory usage.        
@@ -35,4 +38,3 @@ def reduce_mem_usage(df):
     print('Decreased by {:.1f}%'.format(100 * (start_mem - end_mem) / start_mem))
     
     return df
-
